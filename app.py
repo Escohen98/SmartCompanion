@@ -1,7 +1,7 @@
-from flask import Flask, request, url_for, redirect, render_template
+from flask import Flask, request, render_template
 from flask_socketio import SocketIO, Namespace
 from dataclasses import dataclass, fields, asdict
-import eventlet
+
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'S3cr3t!' #Idk, but Daniel said so. 
 socketio = SocketIO(app)
